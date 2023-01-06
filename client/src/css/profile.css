@@ -1,0 +1,17 @@
+.profile{
+    background-color: rgba(225, 226, 228, 0.589);
+    padding:5px 0 10px 0 ;
+    text-align: center;
+    width:30%;
+    margin-left: 35%;
+    margin-right: 20%;
+    margin-top: 20px;
+    margin-bottom:25px;
+    border-radius: 20px;
+    height:400px;
+    box-shadow: 6px 6px 6px rgb(209, 209, 209);
+}
+
+/* .input{
+    width: 300px;
+} */

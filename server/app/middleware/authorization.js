@@ -1,0 +1,21 @@
+const jwt = require('jsonwebtoken')
+
+const authorization = (req, res, next) => {
+    const token = req.headers.authorization 
+    if(token){
+        try{
+            const tokenData = jwt.verify(token.split(' ')[1], process.env.JWT_ADMIN)
+            req.tokenData = tokenData
+            next()
+        }
+        catch(e){
+            res.json({errors : e})
+        }
+    } else {
+        res.json({notice : 'token is required'})
+    }
+}
+
+module.exports = {
+    authorization
+}
