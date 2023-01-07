@@ -82,11 +82,13 @@ const AdminDashboard = (props) => {
                                     <td><Popconfirm
                                         title="Sure to Edit?" 
                                         onConfirm={() => handleEdit(ele)}>
-                                        <button className="btn btn-warning">Edit</button></Popconfirm></td>
+                                        <button className="btn btn-warning">Edit</button></Popconfirm>
+                                    </td>
                                     <td><Popconfirm
                                         title="Sure to Delete?" 
                                         onConfirm={() => handleDelete(ele._id)}>
-                                        <button className="btn btn-danger">Delete</button></Popconfirm></td>
+                                        <button className="btn btn-danger">Delete</button></Popconfirm>
+                                    </td>
                                 </tr>
                             )
                         })

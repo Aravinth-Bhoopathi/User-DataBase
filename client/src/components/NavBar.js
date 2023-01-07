@@ -32,17 +32,17 @@ const NavBar = (props) => {
     return (
         <div>
             <div className="navigation">
-            <nav className="navbar navbar-inverse bg-info text-white">
-            { loggedIn || localStorage.getItem('AdminToken') ? (
-            <Link to="/home" onClick={handleLogout} className="navbar-brand  text-white">Logout</Link>
-            ) : (
+                <nav className="navbar navbar-inverse bg-info text-white">
+                { loggedIn || localStorage.getItem('AdminToken') ? (
+                <Link to="/home" onClick={handleLogout} className="navbar-brand  text-white">Logout</Link>
+                ) : (
                 <div>
-                <Link to="/user/register" className="navbar-brand  text-white">Register</Link>
-                <Link to="/user/login" className="navbar-brand  text-white">Login</Link>
-                <Link to="/admin/login" className="navbar-brand  text-white">Admin</Link>
+                    <Link to="/user/register" className="navbar-brand  text-white">Register</Link>
+                    <Link to="/user/login" className="navbar-brand  text-white">Login</Link>
+                    <Link to="/admin/login" className="navbar-brand  text-white">Admin</Link>
                 </div>
-            )}
-            </nav>
+                )}
+                </nav>
             </div>
             
             <Route path="/home" component={Home} exact/> 

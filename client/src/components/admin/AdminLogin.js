@@ -37,7 +37,6 @@ const AdminLogin = (props) => {
             <br/>
             <input type="submit" value=" Login " className="btn btn-info"/>
             </form>
-            
         </div>
     )
 }
