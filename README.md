@@ -1,8 +1,8 @@
-# User Data App
+# User Database App
 
-- User Data App configure with the redux store and handle with React JS, Redux, Redux-Thunk.
+- User Database App configure with the redux store and handle with React JS, Redux, Redux-Thunk.
 
-- User Data App server was created by MVC architecture and handled with NodeJS, ExpressJS, Mongoose and MongoDB.
+- User Database App server was created by MVC architecture and handled with NodeJS, ExpressJS, Mongoose and MongoDB.
 
 ## Client Features 
 
